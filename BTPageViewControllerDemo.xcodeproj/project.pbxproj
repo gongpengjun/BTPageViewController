@@ -17,8 +17,6 @@
 		C42854C418571036000164B1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42854C318571036000164B1 /* Default@2x.png */; };
 		C42854C618571036000164B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42854C518571036000164B1 /* Default-568h@2x.png */; };
 		C42854CF18571165000164B1 /* BTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42854CE18571165000164B1 /* BTPageViewController.m */; };
-		C42854D3185712D0000164B1 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = C42854D2185712D0000164B1 /* UIView+Position.m */; };
-		C42854D618571323000164B1 /* BTSwipeGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C42854D518571322000164B1 /* BTSwipeGestureRecognizer.m */; };
 		C42854D91857136F000164B1 /* BTPageContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C42854D81857136F000164B1 /* BTPageContainerView.m */; };
 		C42854DB1857180F000164B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42854DA1857180F000164B1 /* QuartzCore.framework */; };
 		C42854DE1857184F000164B1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42854DD1857184F000164B1 /* TestViewController.m */; };
@@ -41,10 +39,6 @@
 		C42854C518571036000164B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C42854CD18571165000164B1 /* BTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPageViewController.h; path = lib/BTPageViewController.h; sourceTree = "<group>"; };
 		C42854CE18571165000164B1 /* BTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPageViewController.m; path = lib/BTPageViewController.m; sourceTree = "<group>"; };
-		C42854D1185712D0000164B1 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Position.h"; path = "lib/UIView+Position.h"; sourceTree = "<group>"; };
-		C42854D2185712D0000164B1 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Position.m"; path = "lib/UIView+Position.m"; sourceTree = "<group>"; };
-		C42854D418571322000164B1 /* BTSwipeGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSwipeGestureRecognizer.h; path = lib/BTSwipeGestureRecognizer.h; sourceTree = "<group>"; };
-		C42854D518571322000164B1 /* BTSwipeGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSwipeGestureRecognizer.m; path = lib/BTSwipeGestureRecognizer.m; sourceTree = "<group>"; };
 		C42854D71857136E000164B1 /* BTPageContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTPageContainerView.h; path = lib/BTPageContainerView.h; sourceTree = "<group>"; };
 		C42854D81857136F000164B1 /* BTPageContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTPageContainerView.m; path = lib/BTPageContainerView.m; sourceTree = "<group>"; };
 		C42854DA1857180F000164B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -131,12 +125,8 @@
 			children = (
 				C42854CD18571165000164B1 /* BTPageViewController.h */,
 				C42854CE18571165000164B1 /* BTPageViewController.m */,
-				C42854D418571322000164B1 /* BTSwipeGestureRecognizer.h */,
-				C42854D518571322000164B1 /* BTSwipeGestureRecognizer.m */,
 				C42854D71857136E000164B1 /* BTPageContainerView.h */,
 				C42854D81857136F000164B1 /* BTPageContainerView.m */,
-				C42854D1185712D0000164B1 /* UIView+Position.h */,
-				C42854D2185712D0000164B1 /* UIView+Position.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -210,8 +200,6 @@
 				C42854BC18571036000164B1 /* main.m in Sources */,
 				C42854C018571036000164B1 /* BTAppDelegate.m in Sources */,
 				C42854CF18571165000164B1 /* BTPageViewController.m in Sources */,
-				C42854D3185712D0000164B1 /* UIView+Position.m in Sources */,
-				C42854D618571323000164B1 /* BTSwipeGestureRecognizer.m in Sources */,
 				C42854D91857136F000164B1 /* BTPageContainerView.m in Sources */,
 				C42854DE1857184F000164B1 /* TestViewController.m in Sources */,
 				C42854E1185718D8000164B1 /* RootViewController.m in Sources */,

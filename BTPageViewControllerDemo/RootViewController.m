@@ -25,7 +25,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    BTPageViewController *pageViewController = [[BTPageViewController alloc] initWithOptions:nil];
+    BTPageViewController *pageViewController = [[BTPageViewController alloc] init];
     pageViewController.dataSource = self;
     pageViewController.delegate = self;
     [self.view addSubview:pageViewController.view];
@@ -43,7 +43,7 @@
 
 - (UIViewController *)pageViewController:(BTPageViewController *)pageViewController viewControllerForPage:(NSInteger)page
 {
-    UIViewController *controller = [[[TestViewController alloc] init] autorelease];
+    TestViewController *controller = [[[TestViewController alloc] init] autorelease];
     UILabel *label = [[UILabel alloc] initWithFrame:controller.view.bounds];
     label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     label.textAlignment = NSTextAlignmentCenter;
@@ -71,7 +71,9 @@
             label.backgroundColor = [UIColor blueColor];
             break;
     }
+    //label.backgroundColor = [UIColor grayColor];
     [controller.view addSubview:label];
+    controller.pageIndex = page;
     return controller;
 }
 

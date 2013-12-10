@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BTPageViewController.h"
 
 @interface BTPageContainerView : UIView
+- (instancetype)initWithFrame:(CGRect)frame;
 @property (retain, nonatomic) UIViewController *viewController;
 @end

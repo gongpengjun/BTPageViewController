@@ -12,3 +12,4 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+#define DLog(...) NSLog(@"%s,%d self:%p %@", __FUNCTION__, __LINE__, self,[NSString stringWithFormat:__VA_ARGS__])

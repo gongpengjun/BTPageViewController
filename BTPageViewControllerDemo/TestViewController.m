@@ -14,39 +14,44 @@
 
 @implementation TestViewController
 
+- (void)dealloc
+{
+    DLog(@"%d",_pageIndex);
+    [super dealloc];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-    DLog(@"fired");
+    DLog(@"%d",_pageIndex);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation

@@ -27,9 +27,12 @@
     [_viewController.view removeFromSuperview];
     [_viewController removeFromParentViewController];
     
-    [_viewController release];
     [viewController retain];
+    [_viewController release];
     _viewController = viewController;
+    
+    if(!_viewController)
+        return;
     
     [parentViewController addChildViewController:_viewController];
     
